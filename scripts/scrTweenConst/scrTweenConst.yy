@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrTweenConst",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrTweenConst",
+  "parent":{
+    "name":"Anime",
+    "path":"folders/Script/Anime.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

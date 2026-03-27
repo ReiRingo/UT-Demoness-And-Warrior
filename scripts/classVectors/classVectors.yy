@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"classVectors",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"classVectors",
+  "parent":{
+    "name":"Structs?",
+    "path":"folders/Script/Structs?.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

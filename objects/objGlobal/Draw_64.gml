@@ -1,0 +1,1 @@
+// draw_text(30, 30, room_get_name(room));

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Q_math",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Q_math",
+  "parent":{
+    "name":"Uncategorised",
+    "path":"folders/Script/Uncategorised.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

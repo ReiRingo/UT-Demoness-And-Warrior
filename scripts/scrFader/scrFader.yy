@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrFader",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrFader",
+  "parent":{
+    "name":"Fader",
+    "path":"folders/Script/Fader.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
