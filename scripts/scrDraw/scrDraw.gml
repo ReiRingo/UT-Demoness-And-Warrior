@@ -18,6 +18,17 @@ function drawReset(defaultFont = DEFAULT_FONT)
 	draw_set_font(defaultFont);
 }
 
+function draw_reset(default_font = DEFAULT_FONT)
+{
+	gml_pragma("forceinline");
+	
+	draw_set_halign(fa_left);
+	draw_set_valign(fa_top);
+	draw_set_colour(c_white);
+	draw_set_alpha(1);
+	draw_set_font(default_font);
+}
+
 // Profound drawText()
 // This handles font size independency
 function drawText(x, y, str, target = 18.0, angle = 0)

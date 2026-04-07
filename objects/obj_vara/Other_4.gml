@@ -1,0 +1,1 @@
+alarm[0] = 1; // camera modification type shit

@@ -1,0 +1,11 @@
+{
+  "$GMNotes":"v1",
+  "%Name":"note_battle_atk",
+  "name":"note_battle_atk",
+  "parent":{
+    "name":"Battle",
+    "path":"folders/Objects/Battle.yy",
+  },
+  "resourceType":"GMNotes",
+  "resourceVersion":"2.0",
+}

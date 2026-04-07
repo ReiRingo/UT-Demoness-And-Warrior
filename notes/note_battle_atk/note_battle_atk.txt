@@ -1,0 +1,7 @@
+attack blueprint:
+
+kind of like a circle base
+but like a fire will approach it and you click as soon as the fire gets close
+speed must be consistent, and correspondent to the weapon!
+let's make like a weapon id-
+or something.

@@ -27,7 +27,7 @@ if (confirm)
 			// New Game
 			case 0:
 				// TODO: IMPLEMENT NEW GAME
-				room_goto(room_area_toriel);
+				room_goto(room_area_test);
 				audio_stop_sound(menuMus);
 				break;
 			

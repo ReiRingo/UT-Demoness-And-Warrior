@@ -13,7 +13,6 @@
 //
 // // //
 
-// Hack: depth = DEPTH_WORLD - 10
 #macro 	DEPTH_WORLD 		-10
 #macro	DEPTH_GROUND		0
 

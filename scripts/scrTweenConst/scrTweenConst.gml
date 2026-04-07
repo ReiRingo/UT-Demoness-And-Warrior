@@ -14,3 +14,4 @@
 #macro 		TWEEN_SINE_IN		"sine_in"
 #macro 		TWEEN_SINE_OUT		"sine_out"
 // I'm too lazy to continue this
+// this is really what i need really :p

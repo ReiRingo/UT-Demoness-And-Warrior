@@ -22,6 +22,11 @@ function inputInit()
 		vk_shift, ord("X")
 	]);
 	
+	// MENU?
+	inputBind(KEY_MENU, [
+		vk_escape, ord("C")
+	]);
+	
 	// // // //
 	//
 	// ARROW KEYS

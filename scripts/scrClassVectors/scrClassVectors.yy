@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scrClassVectors",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scrClassVectors",
+  "parent":{
+    "name":"Vector",
+    "path":"folders/Script/Vector.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

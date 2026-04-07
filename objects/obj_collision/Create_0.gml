@@ -1,0 +1,2 @@
+collidable = true;
+visible = false;

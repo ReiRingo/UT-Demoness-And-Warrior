@@ -45,7 +45,7 @@ function dialogueStartRaw(x, y, textOrArray, inBetween = "/P/B", suffix = "/P/%"
 // future me.
 // i just wanted to stay consistent with gamemaker's
 gml_pragma("forceinline"); 
-function dialogue_start(content, is_top = DIALOGUE_AUTO_TOP, target = noone)
+function dialogue_start(content, is_top = DIALOGUE_AUTO_TOP, target = obj_vara, stop_who = obj_vara)
 {
 	if (is_top == DIALOGUE_AUTO_TOP)
 	{
@@ -73,6 +73,12 @@ function dialogue_start(content, is_top = DIALOGUE_AUTO_TOP, target = noone)
 	{
 		self.inst = dialogueStartRaw(margin + padding, is_top ? margin + padding : bottom_y + padding, content);
 		is_ready  = true;
+	}
+	
+	with(stop_who)
+	{
+		// do not allow dialogue movement
+		moveable_dia = false;
 	}
 	
 	return inst;

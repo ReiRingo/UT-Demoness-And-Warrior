@@ -18,10 +18,10 @@ if (draw)
 		}
 		
 		// TODO: STATS
-		var __tempStats = ["White", "The Weird Land", "LV 0"];
+		var __tempStats = ["[Saved Game (0:12:34)]", "Vara", "The Weird Land", "LV 2"];
 		
 		draw_set_colour(c_grey);
-		for (var i = 0; i < 3; ++i)
+		for (var i = 0; i < 4; ++i)
 		{
 			drawText(40, 98 + (i * 25), __tempStats[i]);
 		}

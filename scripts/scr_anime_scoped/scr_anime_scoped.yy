@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_anime_scoped",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_anime_scoped",
+  "parent":{
+    "name":"Anime",
+    "path":"folders/Script/Anime.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,9 @@
+An error occured, ohes noes:
+Here are some random hex values:
+0xFF ( (15)(16^1) + (15)(16^0) )
+0x11 ( (1)(16^1) + (1)(16^0) )
+
+lowk, never let sans cook again
+also, press escape, c, or alt+f4 to quit
+
+kill me

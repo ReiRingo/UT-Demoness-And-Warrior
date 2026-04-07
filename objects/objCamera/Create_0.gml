@@ -1,5 +1,5 @@
 // WIDTH and HEIGHT definition in scrInit
-size = new Vector2(WIDTH, HEIGHT);
+size = vec2_t(WIDTH, HEIGHT);
 view = size.copy();
 
 target_cam = 0;

@@ -16,7 +16,7 @@ if (face_blink)
 
 if (textDelay > 0)
 {
-	if (can_skip && inputPressed(KEY_CANCEL))
+	if (can_skip && inputHeld(KEY_CANCEL))
 	{
 		textDelay = 0;
 	}
@@ -26,7 +26,7 @@ if (textDelay > 0)
 	}
 }
 
-if (isPaused && inputPressed(KEY_CONFIRM))
+if (can_unpause && isPaused && inputPressed(KEY_CONFIRM))
 {
 	isPaused = false;
 }
@@ -103,6 +103,7 @@ if (!isFinished && !isPaused && textDelay <= 0)
 					// BREAK (clear board)
 					if (nextChar == "B")
 					{
+						clear_glyphs();
 						glyphs = [];
 						textX = 0;
 						textY = 0;
@@ -192,7 +193,7 @@ if (!isFinished && !isPaused && textDelay <= 0)
 					// SKIPPABLE
 					if (nextChar == "K")
 					{
-						can_skip = int64(string_char_at(text, textRawCount + 3));
+						can_skip = real(string_char_at(text, textRawCount + 3));
 						textRawCount += 3;
 						continue;
 					}
@@ -221,9 +222,16 @@ if (!isFinished && !isPaused && textDelay <= 0)
 						textSpeed    = arg;
 						continue;
 					}
+					
+					if (nextChar == "p")
+					{
+						can_unpause = real(string_char_at(text, textRawCount + 3));
+						textRawCount += 3;
+						continue;
+					}
 				}
 			}
-			else if (char == "&")
+			else if (char == "\n")
 			{
 				textX = 0;
 				textY += (string_height(char) * textScale) + textV;
@@ -237,7 +245,7 @@ if (!isFinished && !isPaused && textDelay <= 0)
 			
 			if (audio_exists(voices[textVoice]))
 			{
-				if (!isFastForward || (textRawCount % 2 == 0))
+				if ((char != " ") && (!isFastForward || (textRawCount % 2 == 0)))
 				{
 					sndOnce(voices[textVoice]);
 				}

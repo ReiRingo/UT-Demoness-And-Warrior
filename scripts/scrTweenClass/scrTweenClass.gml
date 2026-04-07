@@ -1,8 +1,16 @@
+/*******************************************
+ * MODULE: scrTweenClass
+ * AUTHOR: Lasers / Futuregamer
+ * Product of Lasers?
+ *******************************************/
+
 /**
  * Creates a new instance of AnimeClass.
  * @param {Real} startVal The initial value to start the animation from.
  * @return {Struct.AnimeClass}
  */
+
+#macro anime_create createAnime
 function createAnime(startVal)
 {
 	return new AnimeClass(startVal);
@@ -17,6 +25,8 @@ function createAnime(startVal)
  * @param {Function} callMethod The callback function for each frame.
  * @return {Struct.AnimeClass}
  */
+
+#macro do_anime doAnime
 function doAnime(val1, val2, frames, easeType, callMethod)
 {
 	return createAnime(val1).add(val2, frames, easeType).start(callMethod);
@@ -84,6 +94,7 @@ function AnimeClass(defVal, defLoop = false, defFunc = undefined, defData = []) 
 		{
 			return self;
 		}
+		
 		if (array_length(data) == 0) 
 		{
 			return self;
